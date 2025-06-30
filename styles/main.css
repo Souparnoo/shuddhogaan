@@ -1,0 +1,280 @@
+/* Font and base setup */
+@font-face {
+    font-family: 'BenSenHandwriting';
+    src: url('BenSenHandwriting.woff2') format('woff2'),
+        url('BenSenHandwriting.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+  font-family: 'Baloo Da 2', sans-serif;
+  background-color: #fdfaf6;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+header {
+  background-color: #fff8dc;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #aa0033;
+}
+
+nav {
+  margin-top: 0.5em;
+}
+
+nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+main {
+  padding: 2em;
+}
+
+h2 {
+  margin-top: 2em;
+  color: #aa0033;
+}
+
+/* Genres section */
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.genres a {
+  background: #ffe;
+  padding: 1em;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.genres a:hover {
+  transform: scale(1.03);
+  background-color: #fff7cc;
+}
+
+/* Artists section */
+.artists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.artists a {
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  color: #222;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.artists a:hover {
+  transform: scale(1.05);
+}
+
+.artists img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.artists a:hover img {
+  transform: scale(1.1);
+}
+
+.artists p {
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Lyrics Page */
+pre.lyrics {
+  background: #fff8dc;
+  padding: 1em;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  box-shadow: 0 0 5px #ccc;
+  font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+  background-color: #f8f1e4;
+  color: #777;
+}
+
+/* Artist Header Section */
+.artist-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(to right, #ffe6e6, #fff5cc);
+  padding: 2em;
+  border-bottom: 2px solid #eee;
+  gap: 2em;
+}
+
+.artist-header img {
+  width: 180px;
+  height: 180px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.artist-info h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #aa0033;
+}
+
+.artist-info p {
+  margin-top: 0.5em;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.artist-info a.youtube {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: #ff3d00;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.artist-info a.youtube:hover {
+  background-color: #e53900;
+  transform: scale(1.05);
+}
+
+.youtube-link {
+  background-color: #ff3d00;  /* Still red but softer */
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+  margin-top: 0.7em;
+}
+
+.youtube-link:hover {
+  background-color: #d62800;
+  transform: scale(1.05);
+}
+
+/* Song Cards in Artist Page */
+.song-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.song-card {
+  background: #fff8dc;
+  padding: 1em;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+  flex: 1 1 200px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.song-card:hover {
+  background-color: #fff2b3;
+  transform: translateY(-3px) scale(1.02);
+}
+
+.home-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #fff8dc;
+  color: #aa0033;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.home-button:hover {
+  background-color: #fff0b3;
+  transform: scale(1.05);
+}
+/* Song Header */
+.song-header {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  color: #aa0033;
+}
+
+.song-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.3em;
+}
+
+.song-header .meta {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Lyrics Box */
+.lyrics-box pre {
+  font-family: 'Noto Serif Bengali', serif;
+  background: #fff8dc;
+  max-width: 800px;
+  margin: 0 auto 3em auto; /* Only bottom spacing */
+  padding: 1.2em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.3em;
+  line-height: 1.3em;
+  white-space: pre-wrap;
+  color: #222;
+  font-weight: 900;
+  padding-top: 0;
+}
+
