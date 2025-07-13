@@ -1,0 +1,80 @@
+body {
+  margin: 10;
+  font-family: 'Baloo Da 2', sans-serif;
+  background-color: #090040;
+  color: #FFCC00;
+}
+
+.container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #471396;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  font-family:cursive;
+}
+.container :hover{
+    transform: scale(1.05);
+}
+.home-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #fff8dc;
+  color: #aa0033;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.home-button:hover {
+  background-color: #fff0b3;
+  transform: scale(1.3);
+}
+h1 {
+  color: #B13BFF;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #FFCC00;
+}
+
+p strong {
+  color: #FFFFFF;
+}
+
+
+.en {
+  margin-bottom: 20px;
+}
+
+.bn {
+  font-family: 'Noto Sans Bengali', 'SolaimanLipi', sans-serif;
+}
+footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+  background-color: #090040;
+  color: #777;
+  font-size: 0.95em;
+}
+footer a {
+  color: #B13BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
