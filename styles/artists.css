@@ -1,0 +1,142 @@
+html{
+  height: 100%;
+}
+
+body {
+  font-family: 'Baloo Da 2', sans-serif;
+  background-color: #fdfaf6;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(to right, #ffe6f0, #fff3cc);
+  padding: 2em;
+  border-bottom: 2px solid #eee;
+  gap: 2em;
+  border-bottom-right-radius: 30%;
+}
+
+header img {
+  width: 180px;
+  height: 180px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+main {
+  padding: 2em;
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 0em;
+  margin-top: 0em;
+  background-color: #fbe3d9;
+  color: #777;
+  font-size: 0.95em;
+  bottom: 0px;
+  width: 100%;
+  border: solid #f6e7cc ;
+  box-shadow: 0 0 10px #ccc;
+  border-top-left-radius: 70%;
+}
+footer a {
+  color: #aa0033;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.song-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.song-card {
+  background: #fffbe6;
+  padding: 1em;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+  flex: 1 1 200px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.song-card:hover {
+  background-color: #ffedcc;
+  transform: translateY(-3px) scale(1.02);
+}
+
+.artist-info h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #a7002d;
+}
+
+.artist-info p {
+  margin-top: 0.5em;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.artist-info a.youtube {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: #d00000;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.artist-info a.youtube:hover {
+  background-color: #e53900;
+  transform: scale(1.05);
+}
+
+.home-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #fff8dc;
+  color: #aa0033;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.home-button:hover {
+  background-color: #fff0b3;
+  transform: scale(1.3);
+}

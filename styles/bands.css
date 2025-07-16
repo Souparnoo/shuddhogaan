@@ -4,7 +4,7 @@ html{
 
 body {
   font-family: 'Baloo Da 2', sans-serif;
-  background-color: #fefaf2;
+  background-color: #fbf6ee;
   color: #222;
   margin: 0;
   padding: 0;
@@ -19,16 +19,20 @@ body {
 }
 
 header {
-  background-color: #ffe0b3;
-  padding: 1em;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  border-bottom-right-radius: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(to right, #ffe6f0, #fff3cc);
+  padding: 2em;
+  border-bottom: 2px solid #eee;
+  gap: 2em;
+  border-bottom-right-radius: 30%;
 }
+
 header h1 {
-  margin: 0;
   font-size: 2rem;
-  color: #aa0033;
+  margin: 0;
+  color: #a7002d;
 }
 
 main {
@@ -40,7 +44,7 @@ footer {
   text-align: center;
   padding: 0em;
   margin-top: 0em;
-  background-color: #faedd4;
+  background-color: #fae4eb;
   color: #777;
   font-size: 0.95em;
   bottom: 0px;
@@ -58,49 +62,34 @@ footer a:hover {
   text-decoration: underline;
 }
 
-nav {
-  margin-top: 0.5em;
-}
-nav a {
-  margin: 0 1em;
-  text-decoration: none;
-  color: #4b2c20;
-  font-weight: bold;
-}
-
-h2 {
-  margin-top: 2em;
+.home-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #fff8dc;
   color: #aa0033;
-}
-
-.genres {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  margin-top: 1em;
-}
-.genres a {
-  background: #fff2cc;
-  padding: 1em;
-  border-radius: 10px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-weight: bold;
   text-decoration: none;
-  color: #333;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease-in-out;
-}
-.genres a:hover {
-  transform: scale(1.03);
-  background-color: #ffebb3;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 999;
 }
 
-.artists {
+.home-button:hover {
+  background-color: #fff0b3;
+  transform: scale(1.3);
+}
+
+.bands {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5em;
   margin-top: 1em;
   height: auto;
 }
-.artists a {
+.bands a {
   text-align: center;
   width: 150px;
   text-decoration: none;
@@ -109,21 +98,21 @@ h2 {
   overflow: hidden;
   border-radius: 12px;
 }
-.artists a:hover {
+.bands a:hover {
   transform: scale(1.05);
   background-color: #ffe6cc;
 }
-.artists img {
+.bands img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 12px;
   transition: transform 0.3s ease;
 }
-.artists a:hover img {
+.bands a:hover img {
   transform: scale(1.1);
 }
-.artists p {
+.bands p {
   margin-top: 0.5em;
   font-weight: bold;
   font-size: 1.1em;
