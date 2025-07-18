@@ -16,12 +16,13 @@ Most Bengali lyrics available online have numerous spelling mistakes or incorrec
 👉 [Visit ShuddhoGaan](https://souparnoo.github.io/shuddhogaan/)
 
 
-## 🔄 Releases
+## 🔄 Releases  
+This project is regularly updated with new lyrics, features, and design improvements.
 
-This project is updated regularly with new lyrics and features.
+✅ v1.1: Initial release with core structure and first set of songs  
+🎵 v1.2: 5 new songs by রূপম ইসলাম added + minor UI improvements  
+🚀 v1.3: Genre section added, Band songs introduced, About page created, UI polished across pages, and code structure cleaned up
 
-- ✅ [v1.1](https://github.com/souparnoo/shuddhogaan/releases): Initial release with core structure and first set of songs.
-- 📌 v1.2+: Adding more artists and mobile layout improvements.
 
 ## 🛠 Built With
 
